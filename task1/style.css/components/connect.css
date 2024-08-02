@@ -1,0 +1,35 @@
+.connect{
+    display: flex;
+    padding: 300px 200px 150px;
+    justify-content: space-between;
+}
+.connect>img{
+    width: 50%;
+    height: 450px;
+}
+.connect_text{
+    width: 40%;
+}
+.connect h2{
+    font-size: 36px;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    font-weight: 700;
+    color: #293043;
+}
+.connect p{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+}
+.accordion-item{
+    margin-top: 20px;
+    border-radius: 30px !important;
+    border: none !important;
+    box-shadow: 0 5px 20px rgba(41, 48, 67, 0.08);
+}
+.accordion-header{
+    font-weight: bold !important;
+    font-size: 26px;
+}
+.accordion-header,.accordion-button{
+    border-radius: 30px !important;
+}   

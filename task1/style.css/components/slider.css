@@ -1,0 +1,64 @@
+.slick-slider {
+    position: relative;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li button:before {
+    font-size: 12px;
+    color: white;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #01C9F5;
+}
+.slider_1{
+    background-image: url('../../img/blur-slide-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 800px;
+}
+.slider_2{
+    background-image: url('../../img/blur-slide-2.jpg');
+    display: flex;
+    align-items: center;
+    height: 800px;
+}
+.slider_1_info{
+    padding: 250px 200px;
+    width: 60%;
+    color: #fff;
+}
+.slider_1_info h3,.slider_2_info h3{
+    font-weight: 700;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    font-size: 55px;
+}
+.slider_1_info p,.slider_2_info p{
+    font-size: 18px;
+}
+.slider_2_info{
+    padding: 250px 200px;
+    width: 60%;
+    color: #fff;
+}
+.slider_2_info button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #01C9F5;
+    color: #fff;
+    font-weight: 700;
+}
+.slick-next{
+    display: none !important;
+}

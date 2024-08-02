@@ -1,0 +1,27 @@
+.specifications{
+    background-image: url('../../img/blur-product-bg-1.jpg');
+    width: 100%;
+    /* height: 700px; */
+    padding: 50px 400px;
+    background-repeat: no-repeat;
+}
+.specifications_head{
+    width: 100%;
+    text-align: center;
+}
+.specifications_info{
+    display: flex;
+    justify-content: space-between;
+}
+.specifications_info h3{
+    color: #fff;
+}
+.specifications_left{
+    width: calc(70% - 30px);
+}   
+.specifications h2{
+    color: #fff;
+}
+.advantages{
+    margin-top: 40px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYSIWYG Editor with Summernote</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote/dist/summernote-lite.min.js"></script>
+</head>
+<body>
+    <div id="editor"></div>
+    <button id="save">Cохранить</button>
+    <button id="clear">Очистить</button>
+    <script>
+        $(document).ready(function() {
+            $('#editor').summernote({
+                placeholder: 'Напишите что-нибудь...',
+                tabsize: 2,
+                height: 300
+            });
+        if(localStorage.getItem('content')){
+            $('#editor').summernote('code', localStorage.getItem('content'));
+        }
+        $('#save').on('click',function(){
+            var content = $('#editor').summernote('code');
+            localStorage.setItem('content',content);
+            alert('Данные сохранены')
+        })
+        $('#clear').on('click',function(){
+            $('#editor').summernote('code', '');
+            localStorage.removeItem('content');
+            alert('Данные очищены!');
+        })
+        $(document).on('keydown',function(e){
+            if(e.ctrlKey && e.key === "s"){
+                e.preventDefault();
+                var content = $('#editor').summernote('code');
+                localStorage.setItem('content',content);
+                alert('Данные сохранены')
+            }
+        })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.hear{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 100px 200px  ;
+    width: 100%;
+    position: relative;
+}
+.control_smartphone{
+    display: flex;
+}
+.quickly_change{
+    display: flex;
+
+}
+.hear h2{
+    color: #293043;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+}
+.left_side,.right_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.text{
+   padding: 0 30px
+}
+.hear img{
+    width: 50%;
+    align-items: center;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.charge,.up_to{
+    /* border: 1px solid #000; */
+    width: calc(50% - 20px);
+    text-align: center;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); /* Легкая тень вокруг */
+
+}
+.info h2{
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    font-weight: 700;
+    color: #293043;
+    font-size: 20px;
+}
+.info p{
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    color: #01C9F5;
+    margin-bottom: 40px;
+}
+.fa-solid{
+    margin: 30px 0 30px;
+    font-size: 40px;
+    color:#01C9F5;
+}

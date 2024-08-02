@@ -1,0 +1,56 @@
+.music_play{
+    background:linear-gradient(270deg, #01C9F5 0%, #028dfc 100.44%);;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    padding: 0 200px;
+    position: relative;
+    height: 800px;
+}
+.music{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 125px 0 20px;
+
+}
+.music_play_right{
+    width: calc(60% - 10px);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.up_to_music{
+    width: calc(35% - 10px);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); /* Легкая тень вокруг */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border:2px solid #fff;
+    height: 214px;
+
+}
+.up_to_music,.up_to_music>i,.music_play_right>p{
+    color: #fff;
+}
+.music_play_right>h2{
+    color: #293043;
+    font-size: 36px;
+    color: #fff;
+}
+.up_to_music>p{
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    margin-bottom: 40px;
+}
+.music_play_right>p{
+    font-size: 20px;
+}
+.music_play>img{
+    position: absolute;
+    bottom: -200px;
+}
